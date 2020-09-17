@@ -1,0 +1,176 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+
+/*
+=====================================================================*/
+
+
+
+body {
+  background-color: rgb(202, 202, 202);
+}
+
+span {
+  font-size: 18px;
+}
+.contain {
+  max-width: 800px;
+  margin: 0 auto;
+  
+}
+
+
+.title{
+  padding-top: 10px;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.rent-bike {
+  margin-top: 40px;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  height: 100%;
+  max-width: 800px;
+  background-color: rgb(149, 149, 168);
+  margin: 0px auto;
+  border: 1px solid gray;
+  border-radius: 5px;
+  
+}
+
+
+.bike__list {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid gray;
+  background-color: #fff;
+  position: relative;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.create__rent {
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.btn {
+  position: absolute;
+  border: none;
+  padding: 5px 10px;
+  background-color: rgb(79, 179, 79);
+  border-radius: 0.5rem;
+  color: rgb(233, 231, 231);
+  margin: 21px auto;
+  right: 10px;
+  padding: 8px;
+  width: 85px;
+  bottom: -7px;
+
+}
+
+.btn-cancel {
+  position: absolute;
+  border: none;
+  padding: 5px 10px;
+  background-color: rgb(190, 97, 20);
+  border-radius: 0.5rem;
+  color: rgb(233, 231, 231);
+  margin: 21px auto;
+  right: 10px;
+  padding: 8px;
+  width: 85px;
+  bottom: -7px;
+}
+
+.btn-rent {
+  position: absolute;
+  border: none;
+  padding: 5px 10px;
+  background-color: rgb(23, 57, 206);
+  border-radius: 0.5rem;
+  color: rgb(233, 231, 231);
+  margin: 21px auto;
+  right: 110px;
+  padding: 8px;
+  width: 85px;
+  bottom: -7px;
+}
+
+
+/* Style the form - display items horizontally */
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/* Add some margins for each label */
+.form-inline label {
+  margin: 5px 10px 0px 0;
+}
+
+
+/* Style the input fields */
+.form-inline input, select {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+.block {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+input,label {
+  display: block;
+  padding: 0px;
+  border-radius: 4px;
+}
+
+.block .bike-name, select {
+  width: 210px;
+  border-radius: 4px;
+}
+select {
+  -webkit-appearance: none;
+-moz-appearance: none;
+background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+background-repeat: no-repeat;
+background-position-x: 100%;
+background-position-y: 5px;
+
+}
+
+.rent-price {
+  width: 60px;
+}
+
