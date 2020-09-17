@@ -1,7 +1,9 @@
 # rental-bike
 install dependencies:
-cd client && cd server
+cd client and cd server
+
+yarn or npm install
 
 start project: 
 
-cd server && yarn dev
+cd server and yarn dev
