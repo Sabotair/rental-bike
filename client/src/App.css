@@ -13,12 +13,17 @@ a,a:visited{text-decoration: none;}
 a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 /*
 =====================================================================*/
 
-
+.title h1{
+ margin: 10px auto;
+}
+#create-text {
+  display: inline-block;
+  margin-bottom: 10px;
+}
 
 body {
   background-color: rgb(202, 202, 202);
@@ -30,7 +35,6 @@ span {
 .contain {
   max-width: 800px;
   margin: 0 auto;
-  
 }
 
 
@@ -59,7 +63,7 @@ span {
 
 
 .bike__list {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   padding: 20px;
   border: 1px solid gray;
   background-color: #fff;
@@ -101,6 +105,9 @@ span {
   padding: 8px;
   width: 85px;
   bottom: -7px;
+}
+.btn-delete {
+  background-color: rgb(158, 6, 6);
 }
 
 .btn-rent {

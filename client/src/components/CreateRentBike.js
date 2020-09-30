@@ -1,27 +1,28 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
+import { requestBikeList } from '../store/bike/actions';
 import '../App.css';
 
 const CreateRentBike = () => {
 
     const [name, setName] = useState('')
-    const [type, setType] = useState('')
+    const [types, setTypes] = useState('Roadster')
     const [cost, setCost] = useState(0)
     const dispatch = useDispatch()
 
 
 
-    const handleCreateBike = () => {
-        dispatch()
+    const handleCreateBike = (e) => {
+        e.preventDefault()
+        dispatch(requestBikeList({ name, types, cost }))
     }
     return (
         <>
             <div className="title">
                 <h1>Awesome Bike Rental</h1>
-
             </div>
             <div className="contain">
-                <span role='img' aria-label='money-mouth face'>🤑 Create new rent</span>
+                <span id="create-text" role='img' aria-label='money-mouth face'>🤑 Create new rent</span>
                 <div className="container">
                     <div className="create__rent ">
                         <form className="form-inline" onSubmit={handleCreateBike}>
@@ -30,7 +31,6 @@ const CreateRentBike = () => {
                                 <input
                                     type="text"
                                     id="name"
-                                    placeholder
                                     name="name"
                                     className="bike-name"
                                     value={name}
@@ -40,8 +40,8 @@ const CreateRentBike = () => {
                             <div className="block">
                                 <label htmlFor="type">Bike type</label>
                                 <select name="type" id="type"
-                                    value={type}
-                                    onChange={(e) => setType(e.target.value)}
+                                    value={types}
+                                    onChange={(e) => setTypes(e.target.value)}
                                 >
                                     <option value="Roadster">Roadster</option>
                                     <option value="Mountain bike">Mountain bike</option>
@@ -53,7 +53,6 @@ const CreateRentBike = () => {
                                 <input
                                     type="text"
                                     id="price"
-                                    placeholder
                                     name="price"
                                     className="rent-price"
                                     value={cost}
