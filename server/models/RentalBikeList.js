@@ -1,12 +1,13 @@
 const { Schema, model } = require('mongoose');
 
 // схема нащей базы данных (описать, наши велосипеды)
-const BikeListShema = new Schema({
+
+const RentalBikes = new Schema({
     name: String,
     types: String,
     cost: Number
 })
 
-const BikeList = model('bikes', BikeListShema)
+const BikeList = model('RentalBikes', RentalBikes)
 
 module.exports = BikeList
